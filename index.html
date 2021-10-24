@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Paul Savoiu/Andre -->
+    <script type='text/javascript' defer src='./config.js'></script>
+    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - Paul</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="city-input">
+        <h2 class="texth2">Weather App</h2>
+        <input
+          type="text"
+          name="city"
+          id="city-input"
+          class="city-name"
+          placeholder="Enter City Name"
+        />
+        <button class="get-location" id="get-location">Get Location</button>
+      </div>
+      <!-- Second Container -->
+      <div class="weather-info" id="weather-info">
+        <h2 class="text-api">Weather App</h2>
+        <div class="api-elements">
+          <img id="api-image" class="api-image" src="./img/sun.png" alt="" />
+          <h1 id="api-temp" class="api-temp">13</h1>
+          <h3 id="api-weather" class="api-weather">Sun</h3>
+          <h3  id="api-location" class="api-location">Vulcan</h3>
+        </div>
+        <div class="feelsHumidityMain">
+          <div class="feelsLikeMain">
+            <img id="image-feels" src="./img/temperature.png" alt="" />
+            <div class="feelsLikeText">
+              <h4 id="feels-temp">17</h4>
+              <h5 id="feels-text">Feels Like</h5>
+            </div>
+            <div class="humidty-main">
+              <img id="image-humidity" src="./img/humidity.png" alt="" />
+              <div class="humidtyLikeText">
+                <h4 id="humidity">100%</h4>
+                <h5 id="humidity-text">Humidity</h5>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
